@@ -5,6 +5,7 @@
 // To keep your imports tidy, follow the ordering guidelines at
 // https://www.dartlang.org/guides/language/effective-dart/style#ordering
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 
 /// A custom [Category] widget.
 ///
@@ -28,6 +29,9 @@ class Category extends StatelessWidget {
   // See https://docs.flutter.io/flutter/material/Theme-class.html
   Widget build(BuildContext context) {
     // TODO: Build the custom widget here, referring to the Specs.
-    return Container();
+    return Container(
+      height: 100.0,
+      padding: EdgeInsets.all(8.0),
+    );
   }
 }

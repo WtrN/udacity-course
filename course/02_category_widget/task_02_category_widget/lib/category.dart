@@ -31,7 +31,15 @@ class Category extends StatelessWidget {
     // TODO: Build the custom widget here, referring to the Specs.
     return Container(
       height: 100.0,
-      padding: EdgeInsets.all(8.0),
-    );
+      child: Row(
+        children: <Widget>[
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Icon(Icons.cake),
+          )
+        ],
+      ),
+
+      );
   }
 }

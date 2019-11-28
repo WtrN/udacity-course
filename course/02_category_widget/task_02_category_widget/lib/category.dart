@@ -29,24 +29,34 @@ class Category extends StatelessWidget {
   // See https://docs.flutter.io/flutter/material/Theme-class.html
   Widget build(BuildContext context) {
     // TODO: Build the custom widget here, referring to the Specs.
-    return Container(
-      height: 100.0,
-      child: Row(
-        children: <Widget>[
-          Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Icon(Icons.cake),
-          ),
-          Center(
-            child: Text(
-                'Hello Cake',
-              style: TextStyle(
-                fontSize: 24.0
-              ),
+    return Material(
+      color: Colors.transparent,
+        child: InkWell(
+          child: Container(
+            height: 100.0,
+            child: Row(
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.all(16.0),
+                  child: Icon(
+                    Icons.cake,
+                    size: 60.0,
+                  ),
+                ),
+                Center(
+                  child: Text(
+                    'Hello Cake',
+                    style: TextStyle(
+                        fontSize: 24.0
+                    ),
+                  ),
+                )
+              ],
             ),
-          )
-        ],
-      ),
-      );
+          ),
+        ),
+    );
+
+
   }
 }

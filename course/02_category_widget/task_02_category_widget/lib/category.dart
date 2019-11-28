@@ -35,7 +35,7 @@ class Category extends StatelessWidget {
         height: 100.0,
         child: InkWell(
           borderRadius: BorderRadius.circular(50.0),
-          highlightColor: Colors.black,
+          highlightColor: Colors.transparent,
           splashColor: Colors.amberAccent,
 
           onTap: (){

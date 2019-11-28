@@ -36,10 +36,17 @@ class Category extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(8.0),
             child: Icon(Icons.cake),
+          ),
+          Center(
+            child: Text(
+                'Hello Cake',
+              style: TextStyle(
+                fontSize: 24.0
+              ),
+            ),
           )
         ],
       ),
-
       );
   }
 }

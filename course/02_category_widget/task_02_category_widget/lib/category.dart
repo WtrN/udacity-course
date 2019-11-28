@@ -31,32 +31,35 @@ class Category extends StatelessWidget {
     // TODO: Build the custom widget here, referring to the Specs.
     return Material(
       color: Colors.transparent,
+      child: Container(
+        height: 100.0,
         child: InkWell(
-          child: Container(
-            height: 100.0,
-            child: Row(
-              children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.all(16.0),
-                  child: Icon(
-                    Icons.cake,
-                    size: 60.0,
-                  ),
+          borderRadius: BorderRadius.circular(50.0),
+          highlightColor: Colors.black,
+          splashColor: Colors.amberAccent,
+
+          onTap: (){
+            print("Tap!!");
+          },
+          child: Row(
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Icon(
+                  Icons.cake,
+                  size: 60.0,
                 ),
-                Center(
-                  child: Text(
-                    'Hello Cake',
-                    style: TextStyle(
-                        fontSize: 24.0
-                    ),
-                  ),
-                )
-              ],
-            ),
+              ),
+              Center(
+                child: Text(
+                  'Hello Cake',
+                  style: TextStyle(fontSize: 24.0),
+                ),
+              )
+            ],
           ),
         ),
+      ),
     );
-
-
   }
 }
